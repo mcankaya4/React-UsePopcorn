@@ -11,19 +11,19 @@ function WatchedSummary({ watched }) {
       <div>
         <p>
           <span>#️⃣</span>
-          <span>{watched.length} movies</span>
+          <span>{watched?.length || 0} movies</span>
         </p>
         <p>
           <span>⭐️</span>
-          <span>{avgImdbRating.toFixed(2)}</span>
+          <span>{avgImdbRating?.toFixed(2) || 0}</span>
         </p>
         <p>
           <span>🌟</span>
-          <span>{avgUserRating.toFixed(2)}</span>
+          <span>{avgUserRating?.toFixed(2) || 0}</span>
         </p>
         <p>
           <span>⏳</span>
-          <span>{avgRuntime.toFixed(2)} min</span>
+          <span>{avgRuntime?.toFixed(2) || 0} min</span>
         </p>
       </div>
     </div>
