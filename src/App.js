@@ -25,7 +25,7 @@ export default function App() {
   // Todo: İlk render'da verileri localStorage içerisinden çekmek.
   const [watched, setWatched] = useState(function () {
     const storedValue = localStorage.getItem("watched");
-    return JSON.parse(storedValue);
+    return JSON.parse(storedValue) || [];
   });
 
   // Todo: Tıklanan film zaten seçili olan film değil ise tanımla.
