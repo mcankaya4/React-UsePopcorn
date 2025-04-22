@@ -18,7 +18,7 @@ function SelectedMovie({ selectedId, onCloseMovie, onWatchedMovie, watched }) {
     if (rating) countRef.current++;
   }, [rating]);
 
-  const isWatched = watched.find((movie) => movie.imdbID === selectedId);
+  const isWatched = watched?.find((movie) => movie.imdbID === selectedId);
 
   // Todo: Selected movie içerisinde kullanacağımız değişkenleri aktarıyoruz.
   const {
